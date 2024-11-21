@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhesReceitaActivity">
+
+    <!-- Cabeçalho -->
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Conteúdo Principal -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/footerMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título da Receita -->
+            <TextView
+                android:id="@+id/tv_nome_receita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título da Receita"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Informações da Receita -->
+            <TextView
+                android:id="@+id/tv_info_receita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo de preparo: 30 minutos\nServe: 4 pessoas"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Ingredientes -->
+            <TextView
+                android:id="@+id/tv_ingredientes_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredientes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_ingredientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista de ingredientes"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Modo de Preparo -->
+            <TextView
+                android:id="@+id/tv_modo_preparo_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modo de Preparo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_modo_preparo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passo a passo do preparo"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Rodapé -->
+    <include
+        android:id="@+id/footerMenu"
+        layout="@layout/footer_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
