@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.appreceita_virandochefe"
+    namespace = "com.example.appreceita"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.appreceita_virandochefe"
-        minSdk = 29
+        applicationId = "com.example.virandochefe"
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

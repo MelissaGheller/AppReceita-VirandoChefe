@@ -1,6 +1,5 @@
-package com.example.virandochefe
+package com.example.appreceita
 
-import MainActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -34,6 +33,7 @@ class LoginActivity : AppCompatActivity() {
             GlobalScope.launch(Dispatchers.IO) {
                 val usuario = db.usuarioDao().autenticar(email, senha)
                 withContext(Dispatchers.Main) {
+
                     if (usuario != null) {
                         Toast.makeText(this@LoginActivity, "Bem-vindo, ${usuario.nome}!", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@LoginActivity, MainActivity::class.java))

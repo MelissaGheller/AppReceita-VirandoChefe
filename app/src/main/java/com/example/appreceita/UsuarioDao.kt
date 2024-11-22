@@ -1,4 +1,4 @@
-package com.example.virandochefe
+package com.example.appreceita
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -9,13 +9,13 @@ import androidx.room.Query
 interface UsuarioDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun inserir(usuario: Usuario)
+    fun inserir(usuario: Usuario)
 
     @Query("SELECT * FROM usuarios WHERE email = :email AND senha = :senha")
-    suspend fun autenticar(email: String, senha: String): Usuario?
+    fun autenticar(email: String, senha: String): Usuario?
 
     @Query("SELECT * FROM usuarios WHERE id = :id")
-    suspend fun buscarPorId(id: Int): Usuario?
+    fun buscarPorId(id: Int): Usuario?
 }
 
 

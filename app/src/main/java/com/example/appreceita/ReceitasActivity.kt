@@ -1,4 +1,4 @@
-package com.example.virandochefe
+package com.example.appreceita
 
 import android.annotation.SuppressLint
 import android.content.Intent

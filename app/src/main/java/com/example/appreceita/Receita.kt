@@ -1,4 +1,4 @@
-package com.example.virandochefe
+package com.example.appreceita
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

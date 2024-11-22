@@ -1,4 +1,4 @@
-package com.example.virandochefe
+package com.example.appreceita
 
 import android.os.Bundle
 import android.widget.Button

@@ -18,9 +18,7 @@
         android:src="@drawable/pessoa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontalBias="0.8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/iconBack"
@@ -33,8 +31,6 @@
         android:src="@drawable/seta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/iconSearch"
-        app:layout_constraintHorizontalBias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -47,9 +43,7 @@
         android:src="@drawable/mais"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontalBias="0.6"
         app:layout_constraintStart_toEndOf="@+id/iconSearch"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -62,8 +56,6 @@
         android:src="@drawable/lupa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/iconAdd"
-        app:layout_constraintHorizontalBias="0.4"
         app:layout_constraintStart_toEndOf="@+id/iconBack"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

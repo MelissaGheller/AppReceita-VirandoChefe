@@ -1,4 +1,4 @@
-package com.example.virandochefe
+package com.example.appreceita
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -14,10 +14,8 @@ class CategoriasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_categorias)
 
-
         val categoriaSelecionada = intent.getStringExtra("categoria") ?: "Categorias"
         val scrollCategorias = findViewById<LinearLayout>(R.id.scrollCategorias)
-
 
         val categorias = when (categoriaSelecionada) {
             "Bebidas" -> listOf("Sucos Naturais", "Drinks Alcoólicos", "Coquetéis sem Álcool")
@@ -36,6 +34,7 @@ class CategoriasActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
             }
+
             scrollCategorias.addView(botao)
         }
     }

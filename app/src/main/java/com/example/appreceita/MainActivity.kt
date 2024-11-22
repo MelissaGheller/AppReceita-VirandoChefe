@@ -1,15 +1,10 @@
+package com.example.appreceita
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.appreceita_virandochefe.R
-import com.example.virandochefe.CadastroReceitaActivity
-import com.example.virandochefe.CategoriasActivity
-import com.example.virandochefe.LoginActivity
-import com.example.virandochefe.PerfilActivity
-
-
 
 class MainActivity : AppCompatActivity() {
 

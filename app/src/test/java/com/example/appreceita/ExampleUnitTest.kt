@@ -1,4 +1,4 @@
-package com.example.appreceita_virandochefe
+package com.example.appreceita
 
 import org.junit.Test
 
